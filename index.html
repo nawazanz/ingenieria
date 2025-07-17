@@ -3,54 +3,52 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Malla Curricular Interactiva – Ingeniería de Alimentos</title>
-
-  <!-- Bootstrap -->
+  <title>Malla Curricular – Ingeniería de Alimentos</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-
-  <!-- Estilos personalizados -->
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
-  <h1>Malla Curricular Interactiva – Ingeniería de Alimentos</h1>
+  <header class="text-center mb-4">
+    <h1 class="malla-title">Malla Curricular – Ingeniería de Alimentos</h1>
+  </header>
 
-  <div class="container mb-4">
-    <div class="row gy-2 align-items-end">
-      <div class="col-12 col-sm-6 col-md-3">
+  <main class="container">
+
+    <!-- Estado / créditos -->
+    <div class="row mb-4 gy-2 align-items-end">
+      <div class="col-12 col-sm-6 col-md-4">
         <label for="selectLinea" class="form-label mb-0 small fw-bold">Línea de profundización:</label>
         <select id="selectLinea" class="form-select form-select-sm" disabled>
-          <option value="">(Selecciona cuando se desbloquee)</option>
+          <option value="">(Se habilita más adelante)</option>
           <option value="Línea I – Procesos Biotecnológicos">Línea I – Procesos Biotecnológicos</option>
           <option value="Línea II – Innovación y Gestión">Línea II – Innovación y Gestión</option>
           <option value="Línea III – Nutrición y Calidad">Línea III – Nutrición y Calidad</option>
         </select>
       </div>
-      <div class="col-12 col-sm-6 col-md-3">
+      <div class="col-12 col-sm-6 col-md-4">
         <div class="creditos-box">
           Créditos marcados: <span id="creditosMarcados">0</span> / 152
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Contenedor donde se insertarán las tablas de cada periodo -->
-  <div class="container" id="periodosContainer">
-    <!-- Se genera dinámicamente desde script.js -->
-  </div>
+    <!-- Contenedor de periodos -->
+    <div id="periodosCards" class="periodos-grid">
+      <!-- Se genera dinámicamente -->
+    </div>
 
-  <!-- Contenedor electivas línea seleccionada -->
-  <div class="container mt-5" id="lineaElectivasContainer" style="display:none;">
-    <h2 class="h5">Electivas de tu Línea</h2>
-    <div id="lineaTables"></div>
-  </div>
+    <!-- Electivas de línea -->
+    <section id="lineaSection" class="mt-5" style="display:none;">
+      <h2 class="h5 mb-3">Electivas de tu línea</h2>
+      <div id="lineaCards" class="linea-grid"><!-- dinámico --></div>
+    </section>
 
-  <!-- JS libs -->
+  </main>
+
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Lógica -->
   <script src="script.js"></script>
 </body>
 </html>
 
-     
+
