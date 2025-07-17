@@ -10,39 +10,18 @@
 <body>
   <header class="text-center mb-4">
     <h1 class="malla-title">Malla Curricular – Ingeniería de Alimentos</h1>
+    <div class="creditos-total">
+      Créditos marcados: <span id="creditosMarcados">0</span> / 152
+    </div>
   </header>
 
-  <main class="container">
+  <main class="container-xl">
+    <div id="yearsGrid" class="years-grid"><!-- dinámico --></div>
 
-    <!-- Estado / créditos -->
-    <div class="row mb-4 gy-2 align-items-end">
-      <div class="col-12 col-sm-6 col-md-4">
-        <label for="selectLinea" class="form-label mb-0 small fw-bold">Línea de profundización:</label>
-        <select id="selectLinea" class="form-select form-select-sm" disabled>
-          <option value="">(Se habilita más adelante)</option>
-          <option value="Línea I – Procesos Biotecnológicos">Línea I – Procesos Biotecnológicos</option>
-          <option value="Línea II – Innovación y Gestión">Línea II – Innovación y Gestión</option>
-          <option value="Línea III – Nutrición y Calidad">Línea III – Nutrición y Calidad</option>
-        </select>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="creditos-box">
-          Créditos marcados: <span id="creditosMarcados">0</span> / 152
-        </div>
-      </div>
-    </div>
-
-    <!-- Contenedor de periodos -->
-    <div id="periodosCards" class="periodos-grid">
-      <!-- Se genera dinámicamente -->
-    </div>
-
-    <!-- Electivas de línea -->
-    <section id="lineaSection" class="mt-5" style="display:none;">
-      <h2 class="h5 mb-3">Electivas de tu línea</h2>
-      <div id="lineaCards" class="linea-grid"><!-- dinámico --></div>
+    <section id="electivasSection" class="mt-5">
+      <h2 class="h4 text-center mb-3">Electivas</h2>
+      <div class="accordion" id="electivasAccordion"><!-- dinámico --></div>
     </section>
-
   </main>
 
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -50,5 +29,6 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
