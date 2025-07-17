@@ -1,148 +1,94 @@
-/* === estilos.css - Malla Curricular estilo tarjetas === */
-
 :root {
-  --radius-card: 18px;
+  --radius-sem: 18px;
   --radius-course: 14px;
 
-  --clr-IBC: #d9ecff;
-  --clr-AIU: #d9f6e0;
-  --clr-Disciplinar: #fff0c2;
-  --clr-Complementaria: #fcd5d8;
+  --clr-selected: #0d6efd;
+  --clr-selected-text: #fff;
+  --clr-selected-hover: #0b5ed7;
 
-  --clr-locked-bg: #e9ecef;
-  --clr-locked-text: #6c757d;
-
-  --clr-selected-border: #0d6efd;
-  --clr-selected-bg-overlay: rgba(13,110,253,.15);
+  --bg-year-1: linear-gradient(180deg,#efe2ff,#e2ddff);
+  --bg-year-2: linear-gradient(180deg,#ffe4f0,#ffd9e5);
+  --bg-year-3: linear-gradient(180deg,#e4fff6,#d4f7eb);
+  --bg-year-4: linear-gradient(180deg,#fff9e2,#fff3c7);
+  --bg-year-5: linear-gradient(180deg,#e1f0ff,#d4e9ff);
 }
 
-body {
+body{
   background:#f9f9f9;
   padding:20px;
   font-family:system-ui,Segoe UI,Roboto,sans-serif;
-  color:#212529;
 }
-
-.malla-title {
-  font-size:clamp(1.4rem, 2vw, 2rem);
+.malla-title{
+  font-size:clamp(1.5rem,2vw,2.25rem);
   font-weight:700;
 }
-
-/* Créditos */
-.creditos-box {
-  font-weight:bold;
-  font-size:0.95rem;
-  margin-top:.5rem;
+.creditos-total{
+  font-weight:600;
+  font-size:1rem;
+  margin-top:.25rem;
 }
 
-/* Grid de periodos */
-.periodos-grid {
+.years-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));
   gap:1.5rem;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));
 }
 
-/* Tarjeta de periodo */
-.periodo-card {
-  background:#ffffff;
-  border:2px solid #dee2e6;
-  border-radius:var(--radius-card);
-  padding:1rem;
-  position:relative;
-  transition:all .15s;
+.year-col{
+  display:flex;
+  flex-direction:column;
+  gap:1.25rem;
 }
-.periodo-card.locked {
-  opacity:0.55;
-  pointer-events:none;
-}
-.periodo-card.completed {
-  border-color:#198754;
-  box-shadow:0 0 0 3px rgba(25,135,84,.35);
-}
-.periodo-card h2 {
-  font-size:1.1rem;
-  font-weight:700;
-  margin-bottom:.75rem;
+.year-title{
   text-align:center;
+  font-weight:700;
+  font-size:1.15rem;
 }
-.periodo-status-badge {
-  position:absolute;
-  top:.5rem;
-  right:.75rem;
-  font-size:.75rem;
-  padding:.15rem .5rem;
-  border-radius:999px;
-  color:#fff;
-}
-.periodo-card.locked .periodo-status-badge { background:#6c757d; }
-.periodo-card.unlocked .periodo-status-badge { background:#0d6efd; }
-.periodo-card.completed .periodo-status-badge { background:#198754; }
 
-/* Lista de materias dentro de la tarjeta */
-.materias-list {
+.sem-card{
+  border-radius:var(--radius-sem);
+  padding:1rem;
+  background:#ffffff;
+  border:2px solid transparent;
+  box-shadow:0 2px 6px rgba(0,0,0,.05);
+}
+.sem-card[data-year="Primero"]{background:var(--bg-year-1);}
+.sem-card[data-year="Segundo"]{background:var(--bg-year-2);}
+.sem-card[data-year="Tercero"]{background:var(--bg-year-3);}
+.sem-card[data-year="Cuarto"]{background:var(--bg-year-4);}
+.sem-card[data-year="Quinto"]{background:var(--bg-year-5);}
+
+.sem-title{
+  font-weight:700;
+  font-size:1rem;
+  text-align:center;
+  margin-bottom:.75rem;
+}
+
+.courses-list{
   display:flex;
   flex-direction:column;
   gap:.5rem;
 }
-.materia-pill {
+
+.course-pill{
   border-radius:var(--radius-course);
-  padding:.55rem .75rem;
-  line-height:1.2;
+  padding:.6rem .75rem;
   font-size:.95rem;
   font-weight:500;
-  position:relative;
-  transition:all .1s;
-  border:1px solid transparent;
+  border:1px solid rgba(0,0,0,.08);
+  background:#fff;
+  transition:.1s;
 }
-.materia-pill.small-text { font-size:.85rem; }
-.materia-pill .mat-credits {
+.course-pill:hover{filter:brightness(.96);cursor:pointer;}
+.course-pill.selected{
+  background:var(--clr-selected)!important;
+  color:var(--clr-selected-text)!important;
+  border-color:var(--clr-selected-hover)!important;
+}
+.course-pill .credits-badge{
   font-size:.75rem;
   font-weight:600;
-  opacity:.8;
+  opacity:.75;
   margin-left:.35rem;
-}
-.materia-pill.locked {
-  background:var(--clr-locked-bg);
-  color:var(--clr-locked-text);
-  cursor:not-allowed;
-}
-.materia-pill:not(.locked):hover {
-  filter:brightness(.95);
-  cursor:pointer;
-}
-.materia-pill.selected {
-  border-color:var(--clr-selected-border);
-  box-shadow:0 0 0 3px var(--clr-selected-bg-overlay) inset;
-}
-
-/* Colores por campo */
-.materia-pill.IBC { background:var(--clr-IBC); }
-.materia-pill.AIU { background:var(--clr-AIU); }
-.materia-pill.Disciplinar { background:var(--clr-Disciplinar); }
-.materia-pill.Complementaria { background:var(--clr-Complementaria); }
-
-/* Línea electivas grid */
-.linea-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));
-  gap:1rem;
-}
-.linea-card {
-  background:#ffffff;
-  border:2px solid #dee2e6;
-  border-radius:var(--radius-card);
-  padding:1rem;
-}
-.linea-card h3 {
-  font-size:1rem;
-  font-weight:700;
-  margin-bottom:.75rem;
-  text-align:center;
-}
-.linea-card .materias-list { gap:.4rem; }
-
-/* Responsive tweaks */
-@media (max-width:575.98px){
-  .materia-pill{font-size:.9rem;padding:.5rem .7rem;}
-  .materia-pill.small-text{font-size:.8rem;}
 }
