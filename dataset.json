@@ -1,0 +1,506 @@
+[
+  {
+    "periodo": "I",
+    "asignatura": "Química General",
+    "codigo": "100410",
+    "tipo": "Obligatorio",
+    "campo": "IBC",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "I",
+    "asignatura": "Biología",
+    "codigo": "100411",
+    "tipo": "Obligatorio",
+    "campo": "IBC",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "I",
+    "asignatura": "Pensamiento lógico y matemático",
+    "codigo": "100412",
+    "tipo": "Obligatorio",
+    "campo": "IBC",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "I",
+    "asignatura": "Competencias Comunicativas",
+    "codigo": "203138276",
+    "tipo": "Obligatorio",
+    "campo": "AIU",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "I",
+    "asignatura": "Inglés A1",
+    "codigo": "203138281",
+    "tipo": "Obligatorio",
+    "campo": "AIU",
+    "creditos": 2,
+    "linea": ""
+  },
+  {
+    "periodo": "I",
+    "asignatura": "Introducción a la Ingeniería",
+    "codigo": "203138282",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 4,
+    "linea": ""
+  },
+  {
+    "periodo": "I",
+    "asignatura": "Herramientas Digitales para la Gestión del Conocimiento",
+    "codigo": "203138284",
+    "tipo": "Obligatorio",
+    "campo": "IBC",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "I",
+    "asignatura": "Proyecto de Vida",
+    "codigo": "203138285",
+    "tipo": "Obligatorio",
+    "campo": "AIU",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "II",
+    "asignatura": "Cálculo Diferencial",
+    "codigo": "100413",
+    "tipo": "Obligatorio",
+    "campo": "IBC",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "II",
+    "asignatura": "Física General",
+    "codigo": "201015",
+    "tipo": "Obligatorio",
+    "campo": "IBC",
+    "creditos": 2,
+    "linea": ""
+  },
+  {
+    "periodo": "II",
+    "asignatura": "Química Orgánica",
+    "codigo": "301103",
+    "tipo": "Obligatorio",
+    "campo": "IBC",
+    "creditos": 4,
+    "linea": ""
+  },
+  {
+    "periodo": "II",
+    "asignatura": "Bioquímica",
+    "codigo": "203138274",
+    "tipo": "Obligatorio",
+    "campo": "IBC",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "II",
+    "asignatura": "Estadística y Probabilidad",
+    "codigo": "203138278",
+    "tipo": "Obligatorio",
+    "campo": "IBC",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "II",
+    "asignatura": "Dibujo de Ingeniería",
+    "codigo": "203138283",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "II",
+    "asignatura": "Electivo Disciplinar Común I",
+    "codigo": "",
+    "tipo": "Electivo",
+    "campo": "Disciplinar",
+    "creditos": 0,
+    "linea": ""
+  },
+  {
+    "periodo": "III",
+    "asignatura": "Cálculo Integral",
+    "codigo": "201102",
+    "tipo": "Obligatorio",
+    "campo": "IBC",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "III",
+    "asignatura": "Fisicoquímica",
+    "codigo": "100416",
+    "tipo": "Obligatorio",
+    "campo": "IBC",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "III",
+    "asignatura": "Microbiología de los Alimentos",
+    "codigo": "201103",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "III",
+    "asignatura": "Ciencia de los Alimentos",
+    "codigo": "211619",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "III",
+    "asignatura": "Inglés A2",
+    "codigo": "203138280",
+    "tipo": "Obligatorio",
+    "campo": "AIU",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "III",
+    "asignatura": "Electivo Interdisciplinar Básico Común I (mover?)",
+    "codigo": "",
+    "tipo": "Electivo",
+    "campo": "IBC",
+    "creditos": 5,
+    "linea": ""
+  },
+  {
+    "periodo": "IV",
+    "asignatura": "Ecuaciones Diferenciales",
+    "codigo": "201101",
+    "tipo": "Obligatorio",
+    "campo": "IBC",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "IV",
+    "asignatura": "Balance de Materia y Energía",
+    "codigo": "211624",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "IV",
+    "asignatura": "Procesos de la Industria Alimentaria I",
+    "codigo": "203138275",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "IV",
+    "asignatura": "Termodinámica",
+    "codigo": "203138279",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "IV",
+    "asignatura": "Procesos de la Industria Alimentaria II",
+    "codigo": "203138277",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "IV",
+    "asignatura": "Inglés B1+",
+    "codigo": "PEND",
+    "tipo": "Obligatorio",
+    "campo": "AIU",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "V",
+    "asignatura": "Manejo de materias primas alimentarias",
+    "codigo": "216010",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 2,
+    "linea": ""
+  },
+  {
+    "periodo": "V",
+    "asignatura": "Mecánica de sólidos y fluídos",
+    "codigo": "211622",
+    "tipo": "Obligatorio",
+    "campo": "IBC",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "V",
+    "asignatura": "Cátedra Unadista",
+    "codigo": "201604",
+    "tipo": "Obligatorio",
+    "campo": "AIU",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "V",
+    "asignatura": "Food quality and safety management",
+    "codigo": "202337120",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "V",
+    "asignatura": "Inglés B1",
+    "codigo": "100108",
+    "tipo": "Obligatorio",
+    "campo": "AIU",
+    "creditos": 2,
+    "linea": ""
+  },
+  {
+    "periodo": "V",
+    "asignatura": "Electivo Disciplinar Común II",
+    "codigo": "203138286",
+    "tipo": "Electivo",
+    "campo": "Disciplinar",
+    "creditos": 5,
+    "linea": ""
+  },
+  {
+    "periodo": "VI",
+    "asignatura": "Procesos de conservación de alimentos",
+    "codigo": "203138287",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "VI",
+    "asignatura": "Fenómenos de Transporte",
+    "codigo": "203138291",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "VI",
+    "asignatura": "Ética y Ciudadanía",
+    "codigo": "203138295",
+    "tipo": "Obligatorio",
+    "campo": "AIU",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "VI",
+    "asignatura": "Fundamentos y Generalidades de Investigación",
+    "codigo": "40006",
+    "tipo": "Obligatorio",
+    "campo": "IBC",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "VI",
+    "asignatura": "Electivo Interdisciplinar Básico Común II",
+    "codigo": "301301",
+    "tipo": "Electivo",
+    "campo": "Complementaria",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "VI",
+    "asignatura": "Electivo Formación Complementaria I",
+    "codigo": "80005",
+    "tipo": "Electivo",
+    "campo": "Complementaria",
+    "creditos": 2,
+    "linea": ""
+  },
+  {
+    "periodo": "VII",
+    "asignatura": "Biotecnología Alimentaria",
+    "codigo": "203138288",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "VII",
+    "asignatura": "Operaciones en Alimentos",
+    "codigo": "203138292",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "VII",
+    "asignatura": "Análisis de los Alimentos",
+    "codigo": "203138296",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "VII",
+    "asignatura": "Proyecto de Ingeniería I",
+    "codigo": "105020",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "VII",
+    "asignatura": "Seminario de Investigación",
+    "codigo": "212060",
+    "tipo": "Obligatorio",
+    "campo": "IBC",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "VII",
+    "asignatura": "Electivo Disciplinar Específico I",
+    "codigo": "80007",
+    "tipo": "Electivo",
+    "campo": "Disciplinar",
+    "creditos": 2,
+    "linea": ""
+  },
+  {
+    "periodo": "VIII",
+    "asignatura": "Práctica Profesional",
+    "codigo": "203138289",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "VIII",
+    "asignatura": "Ingeniería de Plantas de Alimentos",
+    "codigo": "203138293",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "VIII",
+    "asignatura": "Food quality and safety management",
+    "codigo": "203138297",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "VIII",
+    "asignatura": "Electivo Disciplinar Específico II",
+    "codigo": "120002",
+    "tipo": "Electivo",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "VIII",
+    "asignatura": "Electivo Interdisciplinar Básico Común III",
+    "codigo": "212030",
+    "tipo": "Electivo",
+    "campo": "Complementaria",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "VIII",
+    "asignatura": "Electivo Formación Complementaria II",
+    "codigo": "80010",
+    "tipo": "Electivo",
+    "campo": "Complementaria",
+    "creditos": 2,
+    "linea": ""
+  },
+  {
+    "periodo": "IX",
+    "asignatura": "Trabajo de Grado",
+    "codigo": "203138290",
+    "tipo": "Obligatorio",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "IX",
+    "asignatura": "Ingeniería Ambiental",
+    "codigo": "203138294",
+    "tipo": "Obligatorio",
+    "campo": "IBC",
+    "creditos": 2,
+    "linea": ""
+  },
+  {
+    "periodo": "IX",
+    "asignatura": "Pedagogía para la solución de conflictos",
+    "codigo": "203138298",
+    "tipo": "Obligatorio",
+    "campo": "AIU",
+    "creditos": 2,
+    "linea": ""
+  },
+  {
+    "periodo": "IX",
+    "asignatura": "Electivo Disciplinar Específico III",
+    "codigo": "40004",
+    "tipo": "Electivo",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  },
+  {
+    "periodo": "IX",
+    "asignatura": "Electivo Disciplinar Específico IV",
+    "codigo": "40005",
+    "tipo": "Electivo",
+    "campo": "Disciplinar",
+    "creditos": 3,
+    "linea": ""
+  }
+]
