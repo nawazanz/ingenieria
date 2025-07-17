@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Malla Curricular Interactiva – Ingeniería de Alimentos</title>
 
-  <!-- Bootstrap + DataTables CSS -->
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" />
 
   <!-- Estilos personalizados -->
   <link rel="stylesheet" href="estilos.css" />
@@ -15,60 +14,43 @@
 <body>
   <h1>Malla Curricular Interactiva – Ingeniería de Alimentos</h1>
 
-  <div class="container">
-    <!-- Filtros -->
-    <div class="row filters-row gy-2">
-      <div class="col-12 col-sm-auto">
-        <label for="filtroPeriodo">Periodo:</label>
-        <select id="filtroPeriodo" class="form-select form-select-sm"></select>
+  <div class="container mb-4">
+    <div class="row gy-2 align-items-end">
+      <div class="col-12 col-sm-6 col-md-3">
+        <label for="selectLinea" class="form-label mb-0 small fw-bold">Línea de profundización:</label>
+        <select id="selectLinea" class="form-select form-select-sm" disabled>
+          <option value="">(Selecciona cuando se desbloquee)</option>
+          <option value="Línea I – Procesos Biotecnológicos">Línea I – Procesos Biotecnológicos</option>
+          <option value="Línea II – Innovación y Gestión">Línea II – Innovación y Gestión</option>
+          <option value="Línea III – Nutrición y Calidad">Línea III – Nutrición y Calidad</option>
+        </select>
       </div>
-      <div class="col-12 col-sm-auto">
-        <label for="filtroCampo">Campo:</label>
-        <select id="filtroCampo" class="form-select form-select-sm"></select>
-      </div>
-      <div class="col-12 col-sm-auto">
-        <label for="filtroTipo">Tipo:</label>
-        <select id="filtroTipo" class="form-select form-select-sm"></select>
-      </div>
-      <div class="col-12 col-sm-auto">
-        <label for="filtroLinea">Línea:</label>
-        <select id="filtroLinea" class="form-select form-select-sm"></select>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="creditos-box">
+          Créditos marcados: <span id="creditosMarcados">0</span> / 152
+        </div>
       </div>
     </div>
+  </div>
 
-    <!-- Tabla -->
-    <table id="malla" class="table table-striped table-bordered" style="width:100%">
-      <thead class="table-dark">
-        <tr>
-          <th>Periodo</th>
-          <th>Asignatura</th>
-          <th>Código</th>
-          <th>Tipo</th>
-          <th>Campo</th>
-          <th>Créditos</th>
-          <th>Línea</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Filas insertadas dinámicamente por script.js -->
-      </tbody>
-    </table>
+  <!-- Contenedor donde se insertarán las tablas de cada periodo -->
+  <div class="container" id="periodosContainer">
+    <!-- Se genera dinámicamente desde script.js -->
+  </div>
 
-    <!-- Créditos y avance -->
-    <div class="creditos-box">
-      Créditos en vista: <span id="totalCreditos">0</span> / 152
-    </div>
-    <div class="progress">
-      <div id="porcentajeAvance" class="progress-bar" role="progressbar" style="width:0%">0%</div>
-    </div>
+  <!-- Contenedor electivas línea seleccionada -->
+  <div class="container mt-5" id="lineaElectivasContainer" style="display:none;">
+    <h2 class="h5">Electivas de tu Línea</h2>
+    <div id="lineaTables"></div>
   </div>
 
   <!-- JS libs -->
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Lógica -->
   <script src="script.js"></script>
 </body>
 </html>
+
+     
